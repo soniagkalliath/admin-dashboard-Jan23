@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'admin-dashboard';
+  title = 'Admin Dashboard';
+  sidebarOpened:boolean=true
+
+  toggle(){
+    this.sidebarOpened = !this.sidebarOpened
+  }
+  
 }
